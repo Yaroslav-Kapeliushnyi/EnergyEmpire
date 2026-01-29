@@ -1,0 +1,534 @@
+[
+    {
+        "id": 1,
+        "title": "Nuclear Power Plant",
+        "description": "This facility operates on the principle of nuclear fission, typically utilizing enriched Uranium-235 fuel rods. Inside the reactor vessel, neutrons collide with heavy uranium nuclei, causing them to split (fission) into lighter fission fragments. This process releases a massive amount of kinetic energy and additional neutrons, sustaining a controlled chain reaction. This energy is converted to thermal energy via a moderator (like water or graphite). The heat is transferred to a primary coolant loop, which then heats a secondary loop to generate high-pressure steam. This steam drives a large turbine generator based on the Rankine thermodynamic cycle to induce electromotive force, effectively converting nuclear binding energy into electricity.",
+        "history": "The history of nuclear power began with Enrico Fermi's Chicago Pile-1 in 1942, demonstrating the first self-sustaining nuclear chain reaction. The first electricity-generating reactor was the EBR-I in Idaho in 1951, followed by the world's first grid-connected plant in Obninsk, USSR, in 1954. Commercial dominance grew rapidly in the 1970s following the oil crisis, with the French Messmer Plan and the US expansion leading to hundreds of reactors worldwide.",
+        "pollution": "High-level radioactive waste (Spent Nuclear Fuel) requiring geological storage for millennia; Thermal pollution affecting local water bodies; Low carbon emissions (~12g CO2/kWh lifecycle); Risk of catastrophic failure (e.g., Chernobyl, Fukushima).",
+        "image": "/images/1.png",
+        "workflow": "Nuclear Fission -> Thermal Kinetic Energy -> Pressurized Coolant -> Rankine Cycle (Steam) -> Turbine Torque -> Electromagnetic Induction -> Grid",
+        "stats": {
+            "output": "0.5 - 4 GW",
+            "efficiency": "0.33",
+            "year built": "1954"
+        }
+    },
+    {
+        "id": 2,
+        "title": "Diesel Generator",
+        "description": "An internal combustion system utilizing the Diesel cycle, known for its compression-ignition mechanism. Air is adiabatically compressed within a cylinder to a ratio of roughly 15:1 to 25:1, raising its temperature well above the auto-ignition point of diesel fuel. Fuel is then atomized and injected directly into this superheated air, where it combusts exothermically. The rapidly expanding gases convert chemical potential energy into linear mechanical work on a piston. This linear motion is translated to rotational energy by a crankshaft, which drives a synchronous alternator to produce AC electricity.",
+        "history": "Invented by Rudolf Diesel in 1893, the engine was originally designed to run on coal dust or vegetable oils (like peanut oil). Diesel aimed to create an engine with significantly higher thermal efficiency than the steam engines of his day. By the early 20th century, diesel engines became the standard for submarines, ships, and heavy industry due to their reliability and fuel density, eventually becoming the global standard for backup power.",
+        "pollution": "High Nitrogen Oxides (NOx); Particulate Matter (PM2.5/Soot); Carbon Monoxide; Noise pollution; Moderate CO2 emissions (~800g CO2/kWh).",
+        "image": "/images/2.png",
+        "workflow": "Chemical Potential Energy -> Adiabatic Compression -> Exothermic Combustion -> Piston Expansion -> Rotational Torque -> Induction -> Load",
+        "stats": {
+            "output": "50 kW - 3 MW",
+            "efficiency": "0.40",
+            "year built": "1897"
+        }
+    },
+    {
+        "id": 3,
+        "title": "Small Wind Turbine",
+        "description": "A micro-generation unit designed to convert the kinetic energy of fluid air flow into mechanical energy. As wind passes over the rotor blades, the shape of the airfoil creates a pressure differential (lift) that exerts torque on the hub. Unlike utility-scale turbines, these are designed for low Reynolds number flow regimes common in turbulent, near-ground environments (urban or rural). The rotational energy drives a permanent magnet generator, creating wild AC which is usually rectified to DC for battery storage integration or inverted for grid use.",
+        "history": "The concept of wind power dates back to ancient Persia, but the electricity-generating wind turbine was invented by Scottish professor James Blyth in 1887 to light his holiday home. Shortly after, Charles F. Brush built a massive, automated wind turbine in Cleveland, Ohio, in 1888, which successfully powered his mansion for 20 years, marking the birth of wind electricity.",
+        "pollution": "Noise pollution (aerodynamic hum); Visual impact; Lifecycle manufacturing emissions (~11g CO2/kWh); Rare earth metal mining for magnets.",
+        "image": "/images/3.png",
+        "workflow": "Atmospheric Kinetic Energy -> Aerodynamic Lift -> Rotor Torque -> Permanent Magnet Induction -> Rectification -> DC Load",
+        "stats": {
+            "output": "1 kW - 100 kW",
+            "efficiency": "0.25",
+            "year built": "1887"
+        }
+    },
+    {
+        "id": 4,
+        "title": "Wind Farm",
+        "description": "A utility-scale array utilizing massive horizontal-axis wind turbines to exploit the Betz limit of air mass extraction. The blades act as high-efficiency airfoils, converting laminar wind flow into rotational mechanical energy. This torque is often multiplied via a gearbox (though direct drive systems exist) to spin a rotor within a stator. The system generates three-phase AC electricity via Faraday's Law of Induction. These farms are sited in areas with high mean wind speeds and use SCADA systems to optimize yaw and pitch for maximum efficiency.",
+        "history": "Utility-scale wind energy emerged in the late 1970s. The first modern wind farm was installed in New Hampshire in 1980, but the industry truly matured in California during the 1980s tax-credit boom (the 'Wind Rush'). Denmark later pioneered offshore technology in 1991, setting the technological standard for the massive gigawatt-scale arrays seen today.",
+        "pollution": "Avian and bat collisions; Visual impact on landscapes; Low frequency noise/shadow flicker; Lifecycle emissions (~11g CO2/kWh); Composite blade waste issues.",
+        "image": "/images/4.png",
+        "workflow": "Laminar Air Flow -> Aerodynamic Lift -> Mechanical Torque -> Gearbox Torque Multiplier -> Electromagnetic Induction -> Step-up Transformation",
+        "stats": {
+            "output": "10 MW - 6 GW",
+            "efficiency": "0.42",
+            "year built": "1980"
+        }
+    },
+    {
+        "id": 5,
+        "title": "Lignite Pit Mine",
+        "description": "An integrated extraction and thermal generation site utilizing low-rank coal (lignite). The process begins with strip mining to expose the coal seam. Due to lignite's low calorific value and high moisture content, it is uneconomical to transport, so it is pulverized and combusted on-site. The exothermic oxidation of carbon heats water in boiler tubes, producing superheated steam. This steam expands through a turbine, strictly following the thermodynamic Rankine cycle, to generate baseload electricity.",
+        "history": "Lignite mining became industrially significant in the early 20th century, particularly in Germany and Australia, where vast near-surface deposits made it economically viable despite its low energy density. Massive bucket-wheel excavators, developed in the 1920s, allowed for the removal of overburden at scales necessary to feed gigawatt-class power plants directly at the mine mouth.",
+        "pollution": "Extremely High CO2 (>1000g/kWh); Sulfur Dioxide (SO2) leading to acid rain; Mercury emissions; Severe land degradation and habitat destruction.",
+        "image": "/images/5.png",
+        "workflow": "Extraction -> Pulverization -> Exothermic Oxidation -> Boiler Heat Transfer -> Steam Expansion -> Turbine Rotation -> Induction",
+        "stats": {
+            "output": "500 MW - 3 GW",
+            "efficiency": "0.38",
+            "year built": "1962"
+        }
+    },
+    {
+        "id": 6,
+        "title": "Standard Coal Plant",
+        "description": "A conventional thermal station utilizing the chemical potential energy of bituminous or sub-bituminous coal. The fuel is pulverized into a fine powder to maximize surface area and injected into a furnace for suspension firing. The resulting combustion converts feedwater into high-pressure, high-temperature steam. This steam drives a multi-stage turbo-generator. Waste heat is rejected via a condenser and cooling tower, strictly adhering to the limits of Carnot efficiency.",
+        "history": "The coal power plant is the ancestor of modern electrification. Thomas Edison's Pearl Street Station in New York City, opened in 1882, was the first central power plant, utilizing coal steam engines to drive dynamo generators. This model dominated global electricity generation for over a century due to the abundance and transportability of coal, powering the Industrial Revolution's later stages.",
+        "pollution": "High CO2 (~820g/kWh); Fly Ash containing heavy metals (Arsenic, Lead); Nitrogen Oxides (NOx); Sulfur Oxides (SOx); Thermal pollution of waterways.",
+        "image": "/images/6.png",
+        "workflow": "Coal Pulverization -> Chemical Combustion -> Thermal Transfer -> High-Pressure Steam -> Turbo-Generator -> Condenser Heat Rejection",
+        "stats": {
+            "output": "100 MW - 4 GW",
+            "efficiency": "0.34",
+            "year built": "1882"
+        }
+    },
+    {
+        "id": 7,
+        "title": "Biomass Burner",
+        "description": "A thermal plant utilizing the combustion of biogenic organic matter such as wood chips, agricultural waste, or sugarcane bagasse. The chemical energy stored in the biomass (derived from solar energy via photosynthesis) is released as heat through oxidation. This drives a steam cycle similar to fossil fuel plants. Advanced versions use circulating fluidized bed boilers to handle fuels with varying moisture content and density.",
+        "history": "Biomass is the oldest form of energy usage, dating back to the discovery of fire. However, industrial biomass electricity generation began in the late 19th century alongside coal. Modern biomass plants evolved significantly in the 1990s and 2000s as a method to utilize forestry and agricultural waste as a dispatchable renewable energy source to complement intermittent wind and solar.",
+        "pollution": "Particulate Matter (PM); Volatile Organic Compounds (VOCs); Nitrogen Oxides; Net CO2 is debated (theoretically neutral, but timing of carbon cycle matters).",
+        "image": "/images/7.png",
+        "workflow": "Photosynthetic Carbon Storage -> Feedstock Processing -> Combustion -> Thermal Energy -> Steam Cycle -> Mechanical Work -> Electricity",
+        "stats": {
+            "output": "5 MW - 50 MW",
+            "efficiency": "0.28",
+            "year built": "1893"
+        }
+    },
+    {
+        "id": 8,
+        "title": "Municipal Waste Incinerator",
+        "description": "A waste-to-energy facility utilizing mass burn incineration technology. Heterogeneous municipal solid waste is fed onto a moving grate and combusted at temperatures exceeding 850°C to ensure the thermal breakdown of hazardous organic compounds. The heat released generates steam in a heat recovery boiler, which drives a turbine-generator set. The process reduces waste volume by ~90%, while flue gases are heavily treated via scrubbers and electrostatic precipitators.",
+        "history": "The first 'destructor' for waste incineration was built in Nottingham, UK, in 1874. While early designs focused solely on volume reduction and sanitation, the 1970s energy crisis spurred the development of Waste-to-Energy (WtE) plants that integrated electricity generation and district heating, particularly in land-scarce nations like Japan and Sweden.",
+        "pollution": "CO2 emissions (plastic content is fossil-derived); Potential Dioxins/Furans if not properly scrubbed; Heavy metals in Fly Ash/Bottom Ash.",
+        "image": "/images/8.png",
+        "workflow": "Waste Combustion -> High-Temperature Oxidation -> Heat Recovery Steam Generation -> Turbine Expansion -> Flue Gas Scrubbing -> Induction",
+        "stats": {
+            "output": "5 MW - 100 MW",
+            "efficiency": "0.22",
+            "year built": "1874"
+        }
+    },
+    {
+        "id": 9,
+        "title": "Rooftop Solar Panel",
+        "description": "A distributed energy system utilizing the photovoltaic effect. Photons from sunlight strike a silicon semiconductor PN-junction, providing enough energy to excite electrons from the valence band to the conduction band (exceeding the band gap). This creates electron-hole pairs that are separated by an internal electric field, generating a direct current (DC) flow. This DC electricity is then converted to AC by an inverter for home use or grid export.",
+        "history": "The photovoltaic effect was observed by Becquerel in 1839, but practical solar cells were not developed until 1954 at Bell Labs. Initially restricted to space satellites due to immense cost, the price of silicon PV plummeted in the 2000s and 2010s due to Chinese manufacturing scaling, allowing solar panels to transition from niche scientific equipment to a standard residential building material.",
+        "pollution": "Zero operational pollution. Manufacturing involves hazardous chemicals (Hydrofluoric acid, Cadmium); Energy intensive production (~41g CO2/kWh lifecycle).",
+        "image": "/images/9.png",
+        "workflow": "Photon Incidence -> Band Gap Excitation -> Electron-Hole Pair Separation -> DC Current Flow -> Inversion (DC to AC) -> Load",
+        "stats": {
+            "output": "300 W - 100 kW",
+            "efficiency": "0.21",
+            "year built": "1973"
+        }
+    },
+    {
+        "id": 10,
+        "title": "CSP Mirror Field",
+        "description": "A solar thermal system using thousands of heliostats (computer-controlled mirrors) to reflect and concentrate solar flux onto a central receiver atop a tower. The concentrated irradiance generates extremely high temperatures in a transfer medium (e.g., molten nitrate salts). This thermal energy is stored in insulated tanks, allowing for power generation after sunset, and is subsequently used to heat water in a heat exchanger, driving a conventional steam turbine power block.",
+        "history": "The concept of concentrating solar power is often attributed to Archimedes, but the first operational steam plant using solar tracking was built by Giovanni Francia in Italy in 1968. The Solar One pilot plant in California (1981) proved the central tower concept, leading to commercial plants like Gemasolar in Spain (2011), which demonstrated 24-hour generation using molten salt storage.",
+        "pollution": "Significant land use and habitat fragmentation; Thermal pollution (avian mortality from concentrated flux); Minimal CO2 emissions.",
+        "image": "/images/10.png",
+        "workflow": "Solar Flux -> Optical Concentration -> Molten Salt Thermal Absorption -> Thermal Storage -> Heat Exchanger -> Steam Rankine Cycle -> Generation",
+        "stats": {
+            "output": "10 MW - 400 MW",
+            "efficiency": "0.18",
+            "year built": "1981"
+        }
+    },
+    {
+        "id": 11,
+        "title": "Tidal Generator",
+        "description": "A hydro-kinetic energy converter placed in tidal streams. It exploits the density of seawater (approx. 1025 kg/m³—800 times denser than air) to extract kinetic energy from the periodic lateral flow of tides caused by lunar/solar gravitational forcing. The hydrodynamic lift on the rotor blades creates torque, driving a generator via a step-up gearbox to match grid frequency. These systems are predictable years in advance.",
+        "history": "Tide mills were used in the Middle Ages and Roman times for grinding grain. However, electricity generation from tides began with the Rance Tidal Power Station in France, commissioned in 1966. While Rance used a barrage (dam) system, modern tidal stream generators (resembling underwater wind turbines) began commercial testing in the early 2000s in locations like Orkney, Scotland.",
+        "pollution": "Disruption of marine ecosystems/sediment transport; Acoustic noise affecting marine mammals; Near-zero operational CO2.",
+        "image": "/images/11.png",
+        "workflow": "Gravitational Tidal Forcing -> Hydrodynamic Fluid Flow -> Rotor Lift -> Low-Speed Torque -> Gearbox Acceleration -> Induction -> Grid",
+        "stats": {
+            "output": "1 MW - 254 MW",
+            "efficiency": "0.24",
+            "year built": "1966"
+        }
+    },
+    {
+        "id": 12,
+        "title": "Perovskite Solar Panel",
+        "description": "A photovoltaic device utilizing a material with a perovskite crystal structure (typically a hybrid organic-inorganic lead or tin halide). These materials exhibit high absorption coefficients and long charge-carrier diffusion lengths. Photons excite electrons within the crystal lattice, generating voltage with lower non-radiative recombination losses compared to traditional silicon. This allows for high efficiency in lightweight, flexible, thin-film form factors.",
+        "history": "Perovskite minerals were discovered in the Ural Mountains in 1839, but their application in solar cells is a recent breakthrough, first reported by Tsutomu Miyasaka in 2009. Starting with efficiencies below 4%, research skyrocketed over the next decade, with lab efficiencies surpassing 25% by 2020, making it the fastest-advancing solar technology in history.",
+        "pollution": "Potential leaching of toxic Lead (Pb) from crystal structure; Use of solvents during manufacturing; Short lifespan leading to electronic waste.",
+        "image": "/images/12.png",
+        "workflow": "Photon Absorption -> Perovskite Lattice Excitation -> Charge Carrier Diffusion -> Electrode Collection -> DC Current -> Inverter -> Grid",
+        "stats": {
+            "output": "Experimental",
+            "efficiency": "0.29",
+            "year built": "2009"
+        }
+    },
+    {
+        "id": 13,
+        "title": "Solar Windows",
+        "description": "A transparent photovoltaic technology utilizing organic polymers or quantum dots tailored to absorb light strictly outside the visible spectrum (Ultraviolet and Near-Infrared). These materials enable the photoelectric effect (or luminescent solar concentration) to occur without obstructing visible light transmission. The energy is guided to the edges of the glass or collected by transparent electrodes, allowing building envelopes to function as active generation surfaces.",
+        "history": "Research into transparent photovoltaics accelerated in the 2010s, driven by the desire to integrate energy generation into skyscrapers without altering their aesthetics. Universities like MIT and Michigan State pioneered technologies using organic salts and quantum dots around 2014, moving the technology from theory to functional prototypes capable of powering smart glass interfaces.",
+        "pollution": "Manufacturing involves solvents and potentially scarce materials (Indium, if ITO is used); Lifecycle recycling challenges.",
+        "image": "/images/13.png",
+        "workflow": "UV/IR Photon Absorption -> Exciton Generation -> Transparent Electrode Collection -> DC Current -> Building Microgrid Integration",
+        "stats": {
+            "output": "5 MW",
+            "efficiency": "0.12",
+            "year built": "2014"
+        }
+    },
+    {
+        "id": 14,
+        "title": "Offshore Wind Farm",
+        "description": "A marine-based aerodynamic energy system. The absence of terrain roughness over the ocean allows for higher mean wind speeds and reduced shear. Turbines with massive swept areas convert high-velocity laminar flow into torque. Power is aggregated at an offshore substation and converted to High Voltage Direct Current (HVDC) to minimize capacitive losses over long subsea transmission distances before being inverted onshore.",
+        "history": "The world's first offshore wind farm, Vindeby, was constructed by Denmark in 1991. It consisted of small 450kW turbines. Since then, the sector has exploded in scale, with the UK and China leading development. In the late 2010s, the introduction of floating wind turbine platforms opened up deep-water sites previously inaccessible to fixed-bottom foundations.",
+        "pollution": "Construction noise (pile driving) impacts marine life; Seabed disturbance; Visual impact from coast; ~9g CO2/kWh lifecycle.",
+        "image": "/images/14.png",
+        "workflow": "Oceanic Laminar Flow -> Large Rotor Aerodynamics -> Torque Generation -> HVDC Conversion -> Subsea Transmission -> Onshore Inversion",
+        "stats": {
+            "output": "200 MW - 2 GW",
+            "efficiency": "0.50",
+            "year built": "1991"
+        }
+    },
+    {
+        "id": 15,
+        "title": "Concentrated Solar II",
+        "description": "A linear focus solar thermal application using parabolic troughs. The parabolic geometry focuses incident sunlight onto a receiver tube (Dewar tube) situated at the focal line. A synthetic oil or molten salt heat transfer fluid is pumped through the tube, absorbing thermal energy via conduction and convection. This hot fluid is then passed through heat exchangers to generate steam for a turbine.",
+        "history": "Frank Shuman built the world's first solar thermal power station in Maadi, Egypt, in 1913, using parabolic troughs to pump water for irrigation. Though oil discoveries halted early solar progress, the technology was revived in the 1980s in the Mojave Desert (SEGS plants), which remain some of the longest-operating solar power stations in the world.",
+        "pollution": "Risk of Heat Transfer Fluid (HTF) leaks (synthetic oils); Large land footprint; Water consumption for mirror cleaning.",
+        "image": "/images/15.png",
+        "workflow": "Solar Incidence -> Parabolic Reflection -> Focal Line Concentration -> Fluid Thermal Absorption -> Steam Generation -> Turbine Rotation",
+        "stats": {
+            "output": "50 MW - 280 MW",
+            "efficiency": "0.24",
+            "year built": "1913"
+        }
+    },
+    {
+        "id": 16,
+        "title": "Thorium Reactor",
+        "description": "A nuclear breeding cycle typically utilizing a Molten Salt Reactor (MSR). Non-fissile Thorium-232 captures a neutron to become Th-233, which decays into fissile Uranium-233. This U-233 undergoes fission, releasing heat into the liquid salt mixture. The liquid fuel acts as both the heat source and the coolant, allowing for high-temperature, low-pressure operation with passive thermodynamic stability (freeze plugs).",
+        "history": "The Molten Salt Reactor Experiment (MSRE) ran at Oak Ridge National Laboratory from 1965 to 1969, successfully proving the viability of liquid fuel and the thorium cycle. Despite its success, funding was diverted to solid-fuel uranium reactors (LWRs) which were more compatible with existing naval technology and weapons programs. Interest reignited in the 2010s due to thorium's safety profile and abundance.",
+        "pollution": "Radioactive waste (shorter half-life than U-235 cycle); Tritium production; Chemical toxicity of salts (Beryllium/Fluorine).",
+        "image": "/images/16.png",
+        "workflow": "Th-232 Neutron Capture -> Beta Decay to U-233 -> Nuclear Fission -> Molten Salt Heating -> Heat Exchanger -> Brayton/Rankine Cycle",
+        "stats": {
+            "output": "300 MW",
+            "efficiency": "0.45",
+            "year built": "1965"
+        }
+    },
+    {
+        "id": 17,
+        "title": "Fusion Prototype",
+        "description": "A thermonuclear reactor exploiting the strong nuclear force. Deuterium and Tritium isotopes are superheated into a plasma state (millions of degrees) and confined via toroidal magnetic fields (Tokamak). When the Coulomb barrier is overcome, the nuclei fuse to form Helium and a high-energy neutron. The neutron's kinetic energy is absorbed by a lithium blanket, converting it to thermal energy to drive a steam cycle. ",
+        "history": "Fusion research began in the 1950s with the invention of the Tokamak by Soviet physicists Tamm and Sakharov. The JET laboratory in the UK achieved the first controlled release of fusion power in 1991. The massive international ITER project, under construction in France, aims to be the first device to produce net energy (Q>1) on a commercial scale, marking the next step in this decades-long quest.",
+        "pollution": "Low-level activated structural waste (due to neutron bombardment); No long-lived transuranic waste; No CO2; Tritium management required.",
+        "image": "/images/17.png",
+        "workflow": "Isotope Ionization -> Magnetic Confinement -> Thermonuclear Fusion -> Neutron Kinetic Release -> Blanket Thermalization -> Steam Cycle",
+        "stats": {
+            "output": "50 MW - 500 MW",
+            "efficiency": "0.67",
+            "year built": "1958"
+        }
+    },
+    {
+        "id": 18,
+        "title": "Clean Coal CCS",
+        "description": "A fossil-fuel system integrated with Carbon Capture and Storage (CCS). Following coal combustion, the flue gas is passed through an absorption tower where chemical solvents (amines) selectively bond with CO2 molecules. The CO2 is subsequently stripped, compressed into a supercritical fluid state, and injected into deep geological formations (saline aquifers or depleted oil fields), decoupling energy generation from atmospheric carbon loading.",
+        "history": "While carbon capture chemistry has been used in industrial gas processing for decades, the integration with commercial power generation is recent. The Boundary Dam Power Station in Saskatchewan, Canada, became the world's first commercial-scale coal-fired power plant with CCS in 2014, capturing approximately 90% of its carbon emissions for use in Enhanced Oil Recovery.",
+        "pollution": "Reduced CO2 (10-15% residual emissions); Toxic Amine solvent waste; Continued pollution from coal mining (particulates, heavy metals).",
+        "image": "/images/18.png",
+        "workflow": "Combustion -> Flue Gas Separation -> Amine Solvent Absorption -> CO2 Desorption -> Supercritical Compression -> Geological Injection",
+        "stats": {
+            "output": "100 MW - 800 MW",
+            "efficiency": "0.29",
+            "year built": "2014"
+        }
+    },
+    {
+        "id": 19,
+        "title": "Bio-Algae Reactor",
+        "description": "A photobioreactor system cultivating photosynthetic microalgae. The algae metabolize CO2 and sunlight to synthesize lipids (triglycerides) within their cellular structures. Biomass is harvested and processed via transesterification to produce biodiesel, or anaerobically digested to produce methane. This chemical energy is then converted to mechanical energy via internal combustion or gas turbines.",
+        "history": "Interest in algae for fuel began in the 1950s but surged during the 1970s oil crisis under the US Aquatic Species Program. A second boom occurred in the late 2000s, driven by genetic engineering and the realization that algae can produce 10 to 100 times more oil per acre than traditional crops like soy or corn, though economic viability remains a challenge.",
+        "pollution": "Potential fertilizer runoff (Eutrophication); Odor; Carbon Neutral (cycles CO2); Waste biomass sludge.",
+        "image": "/images/19.png",
+        "workflow": "Photosynthetic Lipid Synthesis -> Biomass Harvesting -> Transesterification/Digestion -> Biofuel -> Combustion -> Mechanical Work -> Generator",
+        "stats": {
+            "output": "100 kW - 5 MW",
+            "efficiency": "0.05",
+            "year built": "2013"
+        }
+    },
+    {
+        "id": 20,
+        "title": "Small Modular Reactor Array",
+        "description": "A scalable nuclear fission architecture based on Light Water Reactor (LWR) physics. The core is integral to the steam generator vessel, relying on natural convection currents rather than forced pumping for coolant circulation. This passive safety design ensures decay heat removal via gravity and thermodynamics, converting fission heat to steam in a compact, modular form factor that can be factory-assembled.",
+        "history": "Small reactors have powered nuclear submarines since the USS Nautilus in 1954. However, the commercial concept of SMRs—factory-built, modular units designed for civilian grids—gained traction in the 21st century. NuScale Power became the first to receive design approval from the US Nuclear Regulatory Commission in 2020, aiming to replace retiring coal plants with modular nuclear units.",
+        "pollution": "Radioactive waste (Spent Fuel); Thermal pollution; Minimal CO2; Risk of proliferation (though lower than large plants).",
+        "image": "/images/20.png",
+        "workflow": "Fission Core -> Natural Convection Coolant Flow -> Integral Heat Exchange -> Steam Generation -> Turbine Expansion -> Generator",
+        "stats": {
+            "output": "60 MW - 720 MW",
+            "efficiency": "0.33",
+            "year built": "2019"
+        }
+    },
+    {
+        "id": 21,
+        "title": "Zero-Point Energy Generator",
+        "description": "A theoretical device based on Quantum Electrodynamics (QED). It aims to exploit the Casimir effect, where the quantum vacuum creates pressure differentials between nanostructures due to vacuum fluctuations. The device proposes to rectify these electromagnetic fluctuations (virtual particles popping in and out of existence) into a coherent direct current, extracting work from the vacuum ground state.",
+        "history": "The concept of Zero-Point Energy arises from the work of Max Planck and Albert Einstein in the early 20th century regarding the residual energy of oscillators at absolute zero. While the Casimir effect was experimentally proven in 1997, harvesting this energy remains a staple of science fiction and theoretical physics, with no macroscopic working prototype yet achieved.",
+        "pollution": "Unknown; Potential localized entropy disruption or cooling of local space-time.",
+        "image": "/images/21.png",
+        "workflow": "Quantum Vacuum Fluctuations -> Casimir Cavity Resonance -> Fluctuation Rectification -> Electromagnetic Potential -> Direct Current Extraction",
+        "stats": {
+            "output": "Unlimited (Theoretical)",
+            "efficiency": "N/A",
+            "year built": "1913 (Concept)"
+        }
+    },
+    {
+        "id": 22,
+        "title": "Antimatter Reactor",
+        "description": "A high-energy propulsion/generation concept based on mass-energy equivalence (E=mc²). Antimatter (antiprotons) is magnetically trapped and injected into a reaction chamber to collide with matter. The resulting annihilation releases pions and high-energy gamma rays. This radiation is absorbed by a working fluid or collected via magnetic nozzles to produce thrust or thermal energy at the highest possible physical energy density.",
+        "history": "Paul Dirac predicted the existence of antimatter in 1928, and the positron was discovered shortly after. While particle accelerators like CERN produce minute amounts of antimatter today, the energy cost to create it far exceeds the energy released in annihilation. Consequently, antimatter reactors remain a distant future technology, primarily theorized for interstellar travel.",
+        "pollution": "Intense Gamma Radiation bursts; Risk of catastrophic annihilation event; No chemical pollution.",
+        "image": "/images/22.png",
+        "workflow": "Magnetic Containment -> Matter-Antimatter Injection -> Annihilation -> Pion/Gamma Emission -> Thermal/Kinetic Capture -> Power Generation",
+        "stats": {
+            "output": "1 GW - 100 TW",
+            "efficiency": "1.00",
+            "year built": "1928 (Concept)"
+        }
+    },
+    {
+        "id": 23,
+        "title": "Atmospheric Harvester",
+        "description": "An electrostatic energy conversion system tapping the Global Atmospheric Electric Circuit. High-altitude collectors (via tethered aerostats) access the Earth's vertical potential gradient (approx. 100 V/m near ground). Ionizing emitters generate a corona discharge, allowing charge to flow down a conductive tether to ground, effectively short-circuiting the atmospheric capacitor to drive a load.",
+        "history": "Benjamin Franklin's kite experiment in 1752 was the first attempt to interact with atmospheric electricity. In the early 1900s, Nikola Tesla believed he could harness this energy at Wardenclyffe Tower. While small-scale experiments have successfully run motors from atmospheric static, the low current density makes large-scale harvesting technically difficult.",
+        "pollution": "Ozone (O3) generation from corona discharge; Visual clutter/Airspace hazard; No CO2.",
+        "image": "/images/23.png",
+        "workflow": "Vertical Potential Gradient -> Corona Discharge Ionization -> Conductive Tether Current Flow -> Grounding -> Voltage Step-down -> Load",
+        "stats": {
+            "output": "1 kW - 10 MW",
+            "efficiency": "0.10",
+            "year built": "1913 (Early Patents)"
+        }
+    },
+    {
+        "id": 24,
+        "title": "Magma Tap",
+        "description": "A Supercritical Geothermal System utilizing heat from shallow magmatic intrusions. Water is injected into the rock near the magma-rock interface, where temperatures exceed the critical point of water (374°C, 22 MPa). This creates supercritical fluid with low viscosity and extremely high specific enthalpy, driving turbines with significantly higher thermodynamic efficiency than standard geothermal vapor.",
+        "history": "The Iceland Deep Drilling Project (IDDP) accidentally drilled into a magma chamber at Krafla in 2009. Rather than plugging the well, they attempted to harness it, creating the world's first magma-enhanced geothermal system. The well produced 36MW of energy before valve failure, proving the concept that tapping the roots of volcanoes could exponentially increase geothermal potential.",
+        "pollution": "Release of volcanic gases (H2S, CO2, Methane); Potential induced seismicity; Thermal pollution.",
+        "image": "/images/24.png",
+        "workflow": "Fluid Injection -> Magmatic Thermal Transfer -> Supercritical Fluid Transition -> High-Enthalpy Expansion -> Turbine Rotation -> Generator",
+        "stats": {
+            "output": "30 MW - 500 MW",
+            "efficiency": "0.20",
+            "year built": "2009"
+        }
+    },
+    {
+        "id": 25,
+        "title": "Kugelblitz Reactor",
+        "description": "A theoretical black hole starship engine. Lasers are focused to such extreme intensity that they create a 'Kugelblitz' (ball of lightning)—a black hole formed from radiation rather than matter collapse. The system harvests the Hawking radiation (gamma rays and particles) emitted as the black hole decays due to quantum effects near the event horizon, converting it into thermal energy or thrust.",
+        "history": "First proposed by physicist John Wheeler in 1955, the Kugelblitz is a solution to Einstein's field equations. The concept allows for a black hole to be made of pure energy. While creating one requires a laser array larger than currently possible, it remains a theoretically valid method for storing and releasing petawatts of energy for advanced civilizations.",
+        "pollution": "Hard Gamma/X-Ray radiation leaks; Gravitational shear forces; No chemical pollution.",
+        "image": "/images/25.png",
+        "workflow": "Photonic Concentration -> Event Horizon Formation -> Hawking Radiation Emission -> Gamma Ray Absorption -> Heat Engine Cycle",
+        "stats": {
+            "output": "120 Petawatts",
+            "efficiency": "1.00",
+            "year built": "1955 (Concept)"
+        }
+    },
+    {
+        "id": 26,
+        "title": "Planetary Dynamo",
+        "description": "An orbital megastructure utilizing Electrodynamic Tethers. Long conductive cables are deployed from a satellite in low orbit through the planet's magnetosphere. As the tether cuts through magnetic field lines at orbital velocity, a motional electromotive force (Lorentz force) is induced across the cable. The ionosphere completes the circuit, allowing for the extraction of the planet's rotational kinetic energy.",
+        "history": "NASA tested this concept with the Tethered Satellite Systems (TSS) on the Space Shuttle in the 1990s. While TSS-1R successfully generated 3,500 volts and significant current, the tether snapped due to arcing. The physics is sound, turning a planet into the rotor of a massive generator, though drag on the satellite requires constant re-boosting unless used for de-orbiting.",
+        "pollution": "Orbital debris risk; Modification of Ionospheric plasma density; Drag on orbital infrastructure.",
+        "image": "/images/26.png",
+        "workflow": "Orbital Velocity -> Magnetospheric Flux Cutting -> Lorentz Force Induction -> Ionospheric Circuit Return -> Current Extraction",
+        "stats": {
+            "output": "1 GW - 1 TW",
+            "efficiency": "0.85",
+            "year built": "1992 (Tether Exp)"
+        }
+    },
+    {
+        "id": 27,
+        "title": "Neutrino Collector",
+        "description": "A neutrinovoltaic device designed to harvest kinetic energy from the non-zero mass of neutrinos and other non-ionizing radiation. Utilizing multi-layered graphene and silicon doped metamaterials, the impact of passing neutrinos induces atomic micro-vibrations (phonons) in the lattice. These vibrations resonate to create a flow of electrons, generating a small but continuous direct current that works regardless of sunlight or weather.",
+        "history": "The 2015 Nobel Prize in Physics was awarded for the discovery of neutrino oscillations, proving that neutrinos have mass. This opened the theoretical door to harvesting their kinetic energy. Companies like the Neutrino Energy Group have since proposed 'Power Cubes' utilizing doped graphene, though mainstream physics remains skeptical about the practical power density achievable.",
+        "pollution": "Zero emissions; No noise; Minimal electronic waste.",
+        "image": "/images/27.png",
+        "workflow": "Neutrino Flux -> Graphene Lattice Impact -> Phonon Vibration -> Resonance Amplification -> Electron Flow -> DC Current",
+        "stats": {
+            "output": "Microwatts - Watts",
+            "efficiency": "0.001",
+            "year built": "2015 (Proof of Mass)"
+        }
+    },
+    {
+        "id": 28,
+        "title": "Ocean Thermal Energy Converter",
+        "description": "A heat engine operating on the Rankine cycle using the ocean's thermal gradient. Warm surface water vaporizes a working fluid with a low boiling point (e.g., ammonia). The expanding vapor drives a turbine. Cold water pumped from depths of 1000m condenses the vapor back to liquid. This exploits the thermodynamic potential difference between the ocean's layers to generate baseload electricity.",
+        "history": "Proposed by Jacques-Arsène d'Arsonval in 1881, the first OTEC plant was built by his student Georges Claude in Cuba in 1930. The low efficiency required massive pipes and heat exchangers, making it economically difficult. However, interest renewed in the 1970s and again in the 2010s (e.g., in Hawaii and Japan) as a way to provide constant renewable energy to tropical islands.",
+        "pollution": "Cold water upwelling (nutrient imbalance/algal blooms); Ammonia leaks; Disruption of thermal layers.",
+        "image": "/images/28.png",
+        "workflow": "Surface Heat -> Ammonia Vaporization -> Turbine Expansion -> Deep Water Condensation -> Fluid Pump -> Closed Loop Cycle",
+        "stats": {
+            "output": "100 kW - 10 MW",
+            "efficiency": "0.03",
+            "year built": "1930"
+        }
+    },
+    {
+        "id": 29,
+        "title": "Atmospheric Vortex Engine",
+        "description": "A thermodynamic system that creates an artificial controlled tornado. By introducing warm air tangentially into the base of a cylindrical wall, a vortex is initiated. The density difference between the warm air inside and the cool air above creates strong buoyancy (the chimney effect), driving a vertical airflow that spins turbines at the base, effectively harnessing the convective energy of the atmosphere.",
+        "history": "The concept was championed by Canadian engineer Louis Michaud in the 1970s. It aims to replicate the energy density of a natural tornado in a controlled environment. Unlike solar chimneys which require massive glass skirts, the AVE uses the centrifugal force of the vortex itself to act as a virtual chimney, theoretically allowing for cheaper construction and higher altitudes of operation.",
+        "pollution": "Noise pollution (roar of vortex); Local micro-climate alteration; No chemical emissions.",
+        "image": "/images/29.png",
+        "workflow": "Warm Air Injection -> Tangential Flow -> Vortex Formation -> Buoyancy Driven Updraft -> Base Turbine Rotation -> Generator",
+        "stats": {
+            "output": "100 kW - 1 GW",
+            "efficiency": "0.05",
+            "year built": "2015"
+        }
+    },
+    {
+        "id": 30,
+        "title": "Bionic Leaf Forest",
+        "description": "An artificial photosynthesis platform. It integrates a water-splitting catalyst (such as Cobalt-Phosphorus) with bio-engineered bacteria (e.g., Ralstonia eutropha). The catalyst uses solar electricity to split water into hydrogen and oxygen. The bacteria then consume the hydrogen and CO2 to synthesize biomass or liquid fuels (like isopropanol) with an energy conversion efficiency exceeding natural plants.",
+        "history": "Developed by Daniel Nocera and Pamela Silver at Harvard University around 2015, the Bionic Leaf marked a breakthrough in combining inorganic chemistry with biology. It addressed the low efficiency of natural photosynthesis (~1%) by achieving efficiencies of up to 10% in converting sunlight into stored chemical fuel, offering a pathway to carbon-negative manufacturing.",
+        "pollution": "Chemical byproducts from catalysts; Risk of engineered bacteria leakage; Carbon negative output.",
+        "image": "/images/30.png",
+        "workflow": "Solar PV -> Electrolytic Water Splitting -> Hydrogen Feedstock -> Bacterial Carbon Fixation -> Liquid Fuel Synthesis -> Chemical Energy",
+        "stats": {
+            "output": "100 kW - 1 GW",
+            "efficiency": "0.50",
+            "year built": "2015(Bionic Leaf)"
+        }
+    },
+    {
+        "id": 31,
+        "title": "DAC Array",
+        "description": "Direct Air Capture (DAC) uses large fans to draw ambient air through a filter medium containing chemical sorbents (like amines). These sorbents selectively bind with CO2 molecules at atmospheric concentrations (420 ppm). Once saturated, heat or vacuum pressure is applied to release pure CO2 gas, which is then compressed for sequestration or utilization, effectively reversing emissions. ",
+        "history": "The concept of removing CO2 directly from the air was first proposed by physicist Klaus Lackner in 1999. The technology moved from lab scale to reality with the launch of companies like Climeworks and Carbon Engineering in the late 2000s. In 2017, the world's first commercial DAC plant came online in Switzerland, supplying CO2 to a greenhouse.",
+        "pollution": "High energy consumption (requires secondary power source); Chemical sorbent waste; Negative Emissions (removes CO2).",
+        "image": "/images/31.png",
+        "workflow": "Ambient Air Intake -> Solid/Liquid Sorbent Bonding -> Saturation -> Thermal/Vacuum Regeneration -> CO2 Separation -> Compression",
+        "stats": {
+            "output": "Negative Emission",
+            "efficiency": "N/A",
+            "year built": "2017"
+        }
+    },
+    {
+        "id": 32,
+        "title": "Artificial Photosynthesis",
+        "description": "This technology mimics the natural process of plants to store solar energy in chemical bonds. Using semiconductor light absorbers and metal complex catalysts, the system splits water molecules into protons and electrons. These are then used to reduce Carbon Dioxide into fuels like formate, methanol, or hydrogen, creating a closed-loop carbon cycle without biological organisms.",
+        "history": "Italian chemist Giacomo Ciamician prophesied the utilization of solar energy to fix carbon in 1912. However, the first practical demonstration of water splitting using titanium dioxide occurred in 1972 (the Fujishima-Honda effect). Modern efforts focus on increasing the catalytic turnover rate to make the production of 'solar fuels' economically competitive with fossil fuels.",
+        "pollution": "Heavy metal catalysts; Electrolyte disposal; Potential leakage of synthesized fuels.",
+        "image": "/images/32.png",
+        "workflow": "Solar Irradiance -> Semiconductor Excitation -> Charge Separation -> Catalytic Water Oxidation -> CO2 Reduction -> Liquid Fuel Output",
+        "stats": {
+            "output": "Experimental",
+            "efficiency": "0.15",
+            "year built": "1972"
+        }
+    },
+    {
+        "id": 33,
+        "title": "Ocean Alkalinity Station",
+        "description": "A geo-engineering facility that enhances the ocean's natural ability to absorb Carbon Dioxide. By grinding alkaline minerals (such as olivine, lime, or basalt) and dispersing them into seawater, the alkalinity of the water increases. This converts dissolved CO2 into stable bicarbonate and carbonate ions, lowering acidity and allowing the ocean to draw down more atmospheric CO2.",
+        "history": "The concept of Ocean Alkalinity Enhancement (OAE) gained traction in the 1990s as scientists sought ways to mitigate ocean acidification. In 1995, Haroon Kheshgi pioneered models for adding lime to oceans. It represents an acceleration of the natural silicate weathering cycle, compressing a process that usually takes millions of years into decades.",
+        "pollution": "Mining dust; Local pH spikes impacting marine life; Release of heavy metals found in minerals (Nickel, Chromium).",
+        "image": "/images/33.png",
+        "workflow": "Mineral Extraction -> Grinding/Calcination -> Seawater Dispersion -> Acid Neutralization -> Bicarbonate Formation -> CO2 Drawdown",
+        "stats": {
+            "output": "Carbon Sequestration",
+            "efficiency": "0.80",
+            "year built": "1995 (Concept)"
+        }
+    },
+    {
+        "id": 34,
+        "title": "Mineralization Plant",
+        "description": "A carbon storage facility that accelerates the natural weathering of rocks. CO2 captured from industrial sources is dissolved in water and injected into reactive basaltic rock formations deep underground. The acidic carbonated water reacts with calcium, magnesium, and iron in the rock to precipitate solid carbonate minerals, permanently turning the gas into stone.",
+        "history": "The CarbFix project in Iceland, launched in 2012, revolutionized this field. While traditional CCS theory assumed mineralization would take centuries, CarbFix demonstrated that 95% of injected CO2 mineralized into calcite within just two years. This proved that permanent, safe, geological storage of carbon is faster and more viable than previously believed.",
+        "pollution": "High water usage; Potential induced micro-seismicity; Negative Emissions (Permanent storage).",
+        "image": "/images/34.png",
+        "workflow": "CO2 Dissolution -> High Pressure Injection -> Basaltic Rock Reaction -> Ion Exchange -> Carbonate Precipitation -> Solid Rock Storage",
+        "stats": {
+            "output": "Permanent Storage",
+            "efficiency": "0.95",
+            "year built": "2012"
+        }
+    },
+    {
+        "id": 35,
+        "title": "Maxwell's Entropy Engine",
+        "description": "A theoretical device that challenges the Second Law of Thermodynamics. It utilizes a microscopic \"demon\" (an information processing agent) to selectively operate a shutter between two gas chambers, allowing fast molecules to pass one way and slow molecules the other. This creates a temperature difference from a state of equilibrium, generating work purely from information sorting.",
+        "history": "Proposed by James Clerk Maxwell in 1867 as a thought experiment, this engine explores the link between thermodynamics and information theory. While a physical perpetual motion machine is impossible, modern experiments using information-to-energy conversion (Landauer's principle) have created microscopic versions of the demon, proving that information is a physical quantity.",
+        "pollution": "Heat generated by information erasure (Landauer Limit); No chemical pollution.",
+        "image": "/images/35.png",
+        "workflow": "Particle Observation -> Information Processing -> Selective Gating -> Thermal Gradient Creation -> Work Extraction -> Erasure Heat",
+        "stats": {
+            "output": "Pico-Joules",
+            "efficiency": "Unknown",
+            "year built": "1867 (Thought Exp)"
+        }
+    },
+    {
+        "id": 36,
+        "title": "Dimensional Waste Vent",
+        "description": "A sci-fi sanitation infrastructure that opens a stable Einstein-Rosen bridge (wormhole) to an uninhabited dimension or a star. Hazardous waste, heat, and entropy are flushed through the event horizon, effectively removing them from the local thermodynamic system. This allows for perfect local efficiency and waste-free energy generation by exporting the disorder elsewhere.",
+        "history": "Wormholes were theorized in 1916 and expanded upon by Wheeler in the 1950s. The concept of using them for waste disposal is a common trope in science fiction (e.g., Warhammer 40k, Stargate) to explain how advanced civilizations manage the immense heat and waste of high-energy societies without polluting their own biosphere.",
+        "pollution": "None locally; 100% pollution transfer to target dimension; Risk of backflow or dimensional collapse.",
+        "image": "/images/36.png",
+        "workflow": "Waste Aggregation -> Gravitational Singularity Activation -> Event Horizon Stabilization -> Material Ejection -> Portal Closure",
+        "stats": {
+            "output": "Waste Removal",
+            "efficiency": "1.00",
+            "year built": "Future Concept"
+        }
+    },
+    {
+        "id": 37,
+        "title": "Nanobot Swarm Hive",
+        "description": "A distributed power network comprised of billions of molecular-scale machines. Each nanobot harvests ambient energy (thermal, kinetic, or solar) and shares it wirelessly with the swarm. The Hive acts as a collective battery and processor, capable of reconfiguring its physical structure to optimize energy absorption or perform mechanical work.",
+        "history": "The concept of nanotechnology was introduced by Richard Feynman in his 1959 lecture 'There's Plenty of Room at the Bottom.' Eric Drexler popularized the idea of molecular manufacturing in 1986. While individual molecular machines exist today, a cohesive, energy-harvesting swarm remains a 'grey goo' scenario of speculative futurism.",
+        "pollution": "Waste heat; Risk of ecophagy (consuming environment); Nanoparticle pollution if containment fails.",
+        "image": "/images/37.png",
+        "workflow": "Ambient Energy Scavenging -> Molecular Rectification -> Swarm Distribution -> Wireless Power Transfer -> Collective Output",
+        "stats": {
+            "output": "Scalable",
+            "efficiency": "0.60",
+            "year built": "Future Concept"
+        }
+    },
+    {
+        "id": 38,
+        "title": "Gas Power Plant",
+        "description": "A Combined Cycle Gas Turbine (CCGT) station. It utilizes the Brayton cycle where natural gas and air are compressed and combusted to spin a gas turbine. The hot exhaust gases, rather than being vented immediately, are captured by a Heat Recovery Steam Generator (HRSG). This produces steam to drive a secondary steam turbine (Rankine cycle), maximizing energy capture from the fuel.",
+        "history": "The first gas turbine for electricity was installed in Neuchatel, Switzerland, in 1939. However, the Combined Cycle revolution arrived in the 1990s. By stacking the gas and steam cycles, engineers boosted thermal efficiency from 35% to over 60%, making natural gas the bridge fuel of the early 21st century due to its lower carbon profile compared to coal.",
+        "pollution": "CO2 emissions (~450g/kWh); Methane leaks during extraction/transport; Nitrogen Oxides (NOx); Thermal pollution.",
+        "image": "/images/38.png",
+        "workflow": "Gas Combustion -> Gas Turbine Rotation -> Exhaust Heat Capture -> Steam Generation -> Steam Turbine Rotation -> Dual Induction",
+        "stats": {
+            "output": "100 MW - 2 GW",
+            "efficiency": "0.62",
+            "year built": "1939"
+        }
+    }
+]
