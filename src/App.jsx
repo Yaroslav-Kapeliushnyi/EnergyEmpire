@@ -6,7 +6,7 @@ import Detail from './pages/Detail';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/EnergyEmpire">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

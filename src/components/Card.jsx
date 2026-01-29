@@ -33,7 +33,7 @@ const Card = ({ station }) => {
                     background: '#000'
                 }}>
                     <img
-                        src={station.image}
+                        src={(station.image && station.image.startsWith('/images/')) ? (process.env.NODE_ENV === 'production' ? `/EnergyEmpire${station.image}` : station.image) : station.image}
                         alt={station.title}
                         style={{
                             width: '100%',

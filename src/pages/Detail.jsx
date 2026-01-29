@@ -24,7 +24,7 @@ const Detail = () => {
                             {station.title}
                         </h1>
                         <div style={{ width: '100%', height: '400px', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.3)' }}>
-                            <img src={station.image} alt={station.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                            <img src={(station.image && station.image.startsWith('/images/')) ? (process.env.NODE_ENV === 'production' ? `/EnergyEmpire${station.image}` : station.image) : station.image} alt={station.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                         </div>
                     </div>
 

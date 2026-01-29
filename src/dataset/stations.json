@@ -5,7 +5,7 @@
         "description": "This facility operates on the principle of nuclear fission, typically utilizing enriched Uranium-235 fuel rods. Inside the reactor vessel, neutrons collide with heavy uranium nuclei, causing them to split (fission) into lighter fission fragments. This process releases a massive amount of kinetic energy and additional neutrons, sustaining a controlled chain reaction. This energy is converted to thermal energy via a moderator (like water or graphite). The heat is transferred to a primary coolant loop, which then heats a secondary loop to generate high-pressure steam. This steam drives a large turbine generator based on the Rankine thermodynamic cycle to induce electromotive force, effectively converting nuclear binding energy into electricity.",
         "history": "The history of nuclear power began with Enrico Fermi's Chicago Pile-1 in 1942, demonstrating the first self-sustaining nuclear chain reaction. The first electricity-generating reactor was the EBR-I in Idaho in 1951, followed by the world's first grid-connected plant in Obninsk, USSR, in 1954. Commercial dominance grew rapidly in the 1970s following the oil crisis, with the French Messmer Plan and the US expansion leading to hundreds of reactors worldwide.",
         "pollution": "High-level radioactive waste (Spent Nuclear Fuel) requiring geological storage for millennia; Thermal pollution affecting local water bodies; Low carbon emissions (~12g CO2/kWh lifecycle); Risk of catastrophic failure (e.g., Chernobyl, Fukushima).",
-        "image": "/images/1.png",
+        "image": "/EnergyEmpire/images/1.png",
         "workflow": "Nuclear Fission -> Thermal Kinetic Energy -> Pressurized Coolant -> Rankine Cycle (Steam) -> Turbine Torque -> Electromagnetic Induction -> Grid",
         "stats": {
             "output": "0.5 - 4 GW",
@@ -19,7 +19,7 @@
         "description": "An internal combustion system utilizing the Diesel cycle, known for its compression-ignition mechanism. Air is adiabatically compressed within a cylinder to a ratio of roughly 15:1 to 25:1, raising its temperature well above the auto-ignition point of diesel fuel. Fuel is then atomized and injected directly into this superheated air, where it combusts exothermically. The rapidly expanding gases convert chemical potential energy into linear mechanical work on a piston. This linear motion is translated to rotational energy by a crankshaft, which drives a synchronous alternator to produce AC electricity.",
         "history": "Invented by Rudolf Diesel in 1893, the engine was originally designed to run on coal dust or vegetable oils (like peanut oil). Diesel aimed to create an engine with significantly higher thermal efficiency than the steam engines of his day. By the early 20th century, diesel engines became the standard for submarines, ships, and heavy industry due to their reliability and fuel density, eventually becoming the global standard for backup power.",
         "pollution": "High Nitrogen Oxides (NOx); Particulate Matter (PM2.5/Soot); Carbon Monoxide; Noise pollution; Moderate CO2 emissions (~800g CO2/kWh).",
-        "image": "/images/2.png",
+        "image": "/EnergyEmpire/images/2.png",
         "workflow": "Chemical Potential Energy -> Adiabatic Compression -> Exothermic Combustion -> Piston Expansion -> Rotational Torque -> Induction -> Load",
         "stats": {
             "output": "50 kW - 3 MW",
@@ -33,7 +33,7 @@
         "description": "A micro-generation unit designed to convert the kinetic energy of fluid air flow into mechanical energy. As wind passes over the rotor blades, the shape of the airfoil creates a pressure differential (lift) that exerts torque on the hub. Unlike utility-scale turbines, these are designed for low Reynolds number flow regimes common in turbulent, near-ground environments (urban or rural). The rotational energy drives a permanent magnet generator, creating wild AC which is usually rectified to DC for battery storage integration or inverted for grid use.",
         "history": "The concept of wind power dates back to ancient Persia, but the electricity-generating wind turbine was invented by Scottish professor James Blyth in 1887 to light his holiday home. Shortly after, Charles F. Brush built a massive, automated wind turbine in Cleveland, Ohio, in 1888, which successfully powered his mansion for 20 years, marking the birth of wind electricity.",
         "pollution": "Noise pollution (aerodynamic hum); Visual impact; Lifecycle manufacturing emissions (~11g CO2/kWh); Rare earth metal mining for magnets.",
-        "image": "/images/3.png",
+        "image": "/EnergyEmpire/images/4.png",
         "workflow": "Atmospheric Kinetic Energy -> Aerodynamic Lift -> Rotor Torque -> Permanent Magnet Induction -> Rectification -> DC Load",
         "stats": {
             "output": "1 kW - 100 kW",
@@ -61,7 +61,7 @@
         "description": "An integrated extraction and thermal generation site utilizing low-rank coal (lignite). The process begins with strip mining to expose the coal seam. Due to lignite's low calorific value and high moisture content, it is uneconomical to transport, so it is pulverized and combusted on-site. The exothermic oxidation of carbon heats water in boiler tubes, producing superheated steam. This steam expands through a turbine, strictly following the thermodynamic Rankine cycle, to generate baseload electricity.",
         "history": "Lignite mining became industrially significant in the early 20th century, particularly in Germany and Australia, where vast near-surface deposits made it economically viable despite its low energy density. Massive bucket-wheel excavators, developed in the 1920s, allowed for the removal of overburden at scales necessary to feed gigawatt-class power plants directly at the mine mouth.",
         "pollution": "Extremely High CO2 (>1000g/kWh); Sulfur Dioxide (SO2) leading to acid rain; Mercury emissions; Severe land degradation and habitat destruction.",
-        "image": "/images/5.png",
+        "image": "/EnergyEmpire/images/5.png",
         "workflow": "Extraction -> Pulverization -> Exothermic Oxidation -> Boiler Heat Transfer -> Steam Expansion -> Turbine Rotation -> Induction",
         "stats": {
             "output": "500 MW - 3 GW",
@@ -75,7 +75,7 @@
         "description": "A conventional thermal station utilizing the chemical potential energy of bituminous or sub-bituminous coal. The fuel is pulverized into a fine powder to maximize surface area and injected into a furnace for suspension firing. The resulting combustion converts feedwater into high-pressure, high-temperature steam. This steam drives a multi-stage turbo-generator. Waste heat is rejected via a condenser and cooling tower, strictly adhering to the limits of Carnot efficiency.",
         "history": "The coal power plant is the ancestor of modern electrification. Thomas Edison's Pearl Street Station in New York City, opened in 1882, was the first central power plant, utilizing coal steam engines to drive dynamo generators. This model dominated global electricity generation for over a century due to the abundance and transportability of coal, powering the Industrial Revolution's later stages.",
         "pollution": "High CO2 (~820g/kWh); Fly Ash containing heavy metals (Arsenic, Lead); Nitrogen Oxides (NOx); Sulfur Oxides (SOx); Thermal pollution of waterways.",
-        "image": "/images/6.png",
+        "image": "/EnergyEmpire/images/6.png",
         "workflow": "Coal Pulverization -> Chemical Combustion -> Thermal Transfer -> High-Pressure Steam -> Turbo-Generator -> Condenser Heat Rejection",
         "stats": {
             "output": "100 MW - 4 GW",
@@ -89,7 +89,7 @@
         "description": "A thermal plant utilizing the combustion of biogenic organic matter such as wood chips, agricultural waste, or sugarcane bagasse. The chemical energy stored in the biomass (derived from solar energy via photosynthesis) is released as heat through oxidation. This drives a steam cycle similar to fossil fuel plants. Advanced versions use circulating fluidized bed boilers to handle fuels with varying moisture content and density.",
         "history": "Biomass is the oldest form of energy usage, dating back to the discovery of fire. However, industrial biomass electricity generation began in the late 19th century alongside coal. Modern biomass plants evolved significantly in the 1990s and 2000s as a method to utilize forestry and agricultural waste as a dispatchable renewable energy source to complement intermittent wind and solar.",
         "pollution": "Particulate Matter (PM); Volatile Organic Compounds (VOCs); Nitrogen Oxides; Net CO2 is debated (theoretically neutral, but timing of carbon cycle matters).",
-        "image": "/images/7.png",
+        "image": "/EnergyEmpire/images/7.png",
         "workflow": "Photosynthetic Carbon Storage -> Feedstock Processing -> Combustion -> Thermal Energy -> Steam Cycle -> Mechanical Work -> Electricity",
         "stats": {
             "output": "5 MW - 50 MW",
@@ -103,7 +103,7 @@
         "description": "A waste-to-energy facility utilizing mass burn incineration technology. Heterogeneous municipal solid waste is fed onto a moving grate and combusted at temperatures exceeding 850°C to ensure the thermal breakdown of hazardous organic compounds. The heat released generates steam in a heat recovery boiler, which drives a turbine-generator set. The process reduces waste volume by ~90%, while flue gases are heavily treated via scrubbers and electrostatic precipitators.",
         "history": "The first 'destructor' for waste incineration was built in Nottingham, UK, in 1874. While early designs focused solely on volume reduction and sanitation, the 1970s energy crisis spurred the development of Waste-to-Energy (WtE) plants that integrated electricity generation and district heating, particularly in land-scarce nations like Japan and Sweden.",
         "pollution": "CO2 emissions (plastic content is fossil-derived); Potential Dioxins/Furans if not properly scrubbed; Heavy metals in Fly Ash/Bottom Ash.",
-        "image": "/images/8.png",
+        "image": "/EnergyEmpire/images/8.png",
         "workflow": "Waste Combustion -> High-Temperature Oxidation -> Heat Recovery Steam Generation -> Turbine Expansion -> Flue Gas Scrubbing -> Induction",
         "stats": {
             "output": "5 MW - 100 MW",
@@ -117,7 +117,7 @@
         "description": "A distributed energy system utilizing the photovoltaic effect. Photons from sunlight strike a silicon semiconductor PN-junction, providing enough energy to excite electrons from the valence band to the conduction band (exceeding the band gap). This creates electron-hole pairs that are separated by an internal electric field, generating a direct current (DC) flow. This DC electricity is then converted to AC by an inverter for home use or grid export.",
         "history": "The photovoltaic effect was observed by Becquerel in 1839, but practical solar cells were not developed until 1954 at Bell Labs. Initially restricted to space satellites due to immense cost, the price of silicon PV plummeted in the 2000s and 2010s due to Chinese manufacturing scaling, allowing solar panels to transition from niche scientific equipment to a standard residential building material.",
         "pollution": "Zero operational pollution. Manufacturing involves hazardous chemicals (Hydrofluoric acid, Cadmium); Energy intensive production (~41g CO2/kWh lifecycle).",
-        "image": "/images/9.png",
+        "image": "/EnergyEmpire/images/9.png",
         "workflow": "Photon Incidence -> Band Gap Excitation -> Electron-Hole Pair Separation -> DC Current Flow -> Inversion (DC to AC) -> Load",
         "stats": {
             "output": "300 W - 100 kW",
@@ -131,7 +131,7 @@
         "description": "A solar thermal system using thousands of heliostats (computer-controlled mirrors) to reflect and concentrate solar flux onto a central receiver atop a tower. The concentrated irradiance generates extremely high temperatures in a transfer medium (e.g., molten nitrate salts). This thermal energy is stored in insulated tanks, allowing for power generation after sunset, and is subsequently used to heat water in a heat exchanger, driving a conventional steam turbine power block.",
         "history": "The concept of concentrating solar power is often attributed to Archimedes, but the first operational steam plant using solar tracking was built by Giovanni Francia in Italy in 1968. The Solar One pilot plant in California (1981) proved the central tower concept, leading to commercial plants like Gemasolar in Spain (2011), which demonstrated 24-hour generation using molten salt storage.",
         "pollution": "Significant land use and habitat fragmentation; Thermal pollution (avian mortality from concentrated flux); Minimal CO2 emissions.",
-        "image": "/images/10.png",
+        "image": "/EnergyEmpire/images/10.png",
         "workflow": "Solar Flux -> Optical Concentration -> Molten Salt Thermal Absorption -> Thermal Storage -> Heat Exchanger -> Steam Rankine Cycle -> Generation",
         "stats": {
             "output": "10 MW - 400 MW",
